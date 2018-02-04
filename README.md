@@ -4,7 +4,7 @@ Git aliases to prepare branches for Pull Request in a easy way.
 The objective of these aliases is to clean the commits done in your branch, and squash them in 1 commit in order to maintain 
 the historic of your branch elegant and clean.
 
-How it works ?
+## How it works ?
 You have to copy and paste the aliases in the configuration file used by your shell. In my case I am using zsh, and aliases are
 configured in your home directory in a file called .aliases.
 
@@ -23,3 +23,12 @@ This command performs a reset soft until the tag created with the command nb (al
 all the changes in one commit. After that, it deletes the created tag and performs a rebase with master.
 
 Then you have your branch clean, and organized and ready to be pushed to your remote repository whenever you want.
+
+
+## Examples
+
+Creating branch
+> nb my_branch
+
+Preparing branch to pull request
+> ppr my_branch "Added cool feature"
