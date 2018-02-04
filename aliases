@@ -12,8 +12,7 @@ nb () {
 # prepare the branch for PR, squashing all commits from the initial tag in one
 # ppr = Prepare Pull Request
 ppr () {
-    branch = 'git rev-parse --abbrev-ref HEAD'
-    echo "Preparing $branch for Pull Request..."
+    echo "Preparing branch for Pull Request..."
     git reset --soft "begin_$1"~1 &&
     git add . &&
     git commit -m "$2" &&
