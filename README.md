@@ -10,14 +10,14 @@ configured in your home directory in a file called .aliases.
 
 Once you have the aliases running. You can create a new branch from your master branch using the command:
 
-nb <branch_name>
+> nb <branch_name>
 
 This creates a new branch, but also add a tag to mark the beginning of your commits in that branch. After that, you can do all
 the commits you want.
 
 Once you decide your branch is ready for a pull request. You have the execute the command:
 
-ppr <branch_name> <final_message_for_the_commit>
+> ppr <branch_name> <final_message_for_the_commit>
 
 This command performs a reset soft until the tag created with the command nb (all the commits done in your branch), and squash 
 all the changes in one commit. After that, it deletes the created tag and performs a rebase with master.
