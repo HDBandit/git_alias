@@ -17,7 +17,7 @@ the commits you want.
 
 Once you decide your branch is ready for a pull request. You have the execute the command:
 
-ppr <branch_name> <final message for the commit>
+ppr <branch_name> <final_message_for_the_commit>
 
 This command performs a reset soft until the tag created with the command nb (all the commits done in your branch), and squash 
 all the changes in one commit. After that, it deletes the created tag and performs a rebase with master.
